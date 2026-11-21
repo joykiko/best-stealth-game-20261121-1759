@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Salt &amp; Shadow — The Harbour Run</title>
+<style>
+  /* The page is only a frame for the canvas: dark, centred, no network. */
+  html, body { margin: 0; padding: 0; background: #05070e; height: 100%; }
+  body { display: flex; align-items: center; justify-content: center; }
+  #game {
+    width: min(100vw, calc(100vh * 1.6));
+    height: min(100vh, calc(100vw / 1.6));
+    display: block;
+    background: #0b1226;
+    cursor: crosshair;
+  }
+</style>
+</head>
+<body>
+<canvas id="game" width="1280" height="800"></canvas>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
